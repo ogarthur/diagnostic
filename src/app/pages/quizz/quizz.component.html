@@ -3,28 +3,26 @@
   <div class="leftCol">
     <form [formGroup]="quizzForm" (submit)="getResults()">
 
-      <label id="example-radio-group-label">Radio button quesiton </label>
+      <label id="example-radio-group-label">¿Fumas?</label>
       <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
         formControlName="question1">
         <mat-radio-button value="answer1" class="example-radio-button">
-          answer1
+          Sí
         </mat-radio-button>
         <mat-radio-button value="validAnswer"  class="example-radio-button">
-          validAnswer
+          No
         </mat-radio-button>
-        <mat-radio-button value="answer3"  class="example-radio-button">
-          answer3
-        </mat-radio-button>
+
       </mat-radio-group>
 
       <mat-form-field appearance="fill">
-        <mat-label>Drop-down example</mat-label>
+        <mat-label>¿Quien es el mejor mellizo?</mat-label>
         <mat-select formControlName="question2">
           <mat-option value="good">
-            the good one
+            Miri
           </mat-option>
           <mat-option value="bad">
-            fake one
+            El otro
           </mat-option>
         </mat-select>
       </mat-form-field>
