@@ -1,0 +1,13 @@
+<mat-toolbar class="toolbarMenu" color="primary">
+  <img class="roundLogo" src="/assets/images/avocadoc.png">
+  <span>{{title}}</span>
+  <button class="rightMenu" mat-icon-button>
+    <mat-icon [matMenuTriggerFor]="menu">menu</mat-icon>
+    <div class="menu">
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Quizz 1</button>
+        <button mat-menu-item color="primary">Quizz 2</button>
+      </mat-menu>
+    </div>
+  </button>
+</mat-toolbar>

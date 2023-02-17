@@ -1,0 +1,47 @@
+<div class="quizzContainer">
+  <span (click)="test()"></span>
+  <div class="leftCol">
+    <form [formGroup]="quizzForm" (submit)="getResults()">
+
+      <label id="example-radio-group-label">Radio button quesiton </label>
+      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
+        formControlName="question1">
+        <mat-radio-button value="answer1" class="example-radio-button">
+          answer1
+        </mat-radio-button>
+        <mat-radio-button value="validAnswer"  class="example-radio-button">
+          validAnswer
+        </mat-radio-button>
+        <mat-radio-button value="answer3"  class="example-radio-button">
+          answer3
+        </mat-radio-button>
+      </mat-radio-group>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Drop-down example</mat-label>
+        <mat-select formControlName="question2">
+          <mat-option value="good">
+            the good one
+          </mat-option>
+          <mat-option value="bad">
+            fake one
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button [disabled]="!quizzForm.valid" mat-raised-button color="primary">Comprobar resultados</button>
+    </form>
+  </div>
+  <div class="righttCol">
+    <span> <h1> Result:</h1> {{result}}</span>
+
+    <button *ngIf="result" mat-raised-button color="primary" (click)="download()">Descargar resultados en txt
+      <mat-icon>download</mat-icon>
+
+
+    </button>
+
+  </div>
+
+
+</div>

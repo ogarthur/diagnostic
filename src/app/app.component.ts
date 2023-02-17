@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { globalConstants } from './shared/constants/constants';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'medicaldiego';
+  title = globalConstants.APP_TITLE;
+  version = globalConstants.VERSION;
 }

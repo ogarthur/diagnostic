@@ -1,0 +1,16 @@
+.toolbarMenu{
+  display: inline-flex;
+  gap:10px;
+  .rightMenu{
+    margin-left: auto;
+  }
+
+
+    .roundLogo {
+      border-radius: 50%;
+      border:2px white solid;
+      width:2em;
+      height: 2em;
+    }
+
+}

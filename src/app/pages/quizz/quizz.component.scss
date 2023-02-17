@@ -1,0 +1,28 @@
+.quizzContainer{
+  padding:3em;
+  display: flex;
+  flex-direction: row;
+  .leftCol{
+    width:70%;
+   form{
+    display: flex;
+    flex-direction: column;
+   }
+  }
+  .righttCol{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  .example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: flex-start;
+  }
+
+  .example-radio-button {
+    margin: 5px;
+  }
+
+}
