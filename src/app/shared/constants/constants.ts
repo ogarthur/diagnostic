@@ -1,6 +1,6 @@
 export const globalConstants ={
   'VERSION':'0',
-  'APP_TITLE':'Dr.Avocado quizzs',
+  'APP_TITLE':'Dr.Avocado Diagnostic',
 }
 
 export const lore = 'Where does it come from?\
