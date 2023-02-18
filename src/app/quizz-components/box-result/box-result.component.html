@@ -1,0 +1,12 @@
+<mat-card class="result-card">
+  <mat-card-header>
+    <mat-card-title>{{title||"Diagnostico"}}</mat-card-title>
+    <mat-card-subtitle>{{subtitle||"Este diagnostico es orientativo, consulte con su medico"}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{resultText}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button mat-button (click)="download()">DOWNLOAD  <mat-icon>download</mat-icon></button>
+  </mat-card-actions>
+</mat-card>

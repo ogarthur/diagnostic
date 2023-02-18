@@ -31,13 +31,7 @@
     </form>
   </div>
   <div class="righttCol">
-    <span> <h1> Tu resultado:</h1> {{result}}</span>
-
-    <button *ngIf="result" mat-raised-button color="primary" (click)="download()">Descargar resultados en txt
-      <mat-icon>download</mat-icon>
-
-
-    </button>
+    <app-box-result *ngIf="result" [resultText]="result"></app-box-result>
 
   </div>
 

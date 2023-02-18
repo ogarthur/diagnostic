@@ -1,3 +1,4 @@
+import { QuizzComponentsModule } from './quizz-components/quizz-components.module';
 import { PagesModule } from './pages/pages.module';
 import { LayoutModule } from './layout/layout.module';
 import { SharedComponentsModule } from './shared-components/shared-components.module';
@@ -19,7 +20,8 @@ import { MaterialModule } from './material/material.module';
     BrowserAnimationsModule,
     SharedComponentsModule,
     LayoutModule,
-    MaterialModule
+    MaterialModule,
+    QuizzComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

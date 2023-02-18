@@ -14,6 +14,8 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 export class QuizzComponent implements OnInit {
   fileUrl!: SafeResourceUrl;
+  cardTitle = "Resultado diagnostico"
+  subTitle =" this is a text"
   textResults:any = {
     0: 'Vas a morir pronto',
     1: 'Animo campeón, tu puedes',

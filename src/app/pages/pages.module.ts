@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { QuizzComponent } from './quizz/quizz.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
+import { QuizzComponentsModule } from '../quizz-components/quizz-components.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MaterialModule } from '../material/material.module';
     CommonModule,
     PagesRoutingModule,
     ReactiveFormsModule,
-    MaterialModule
+    MaterialModule,
+    QuizzComponentsModule
   ]
 })
 export class PagesModule { }
